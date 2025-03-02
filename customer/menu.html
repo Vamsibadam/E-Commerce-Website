@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+         body{
+            background: rgb(255, 255, 255);
+            
+        }
+        .boundary{
+            background: linear-gradient(to right,#acb8bd 70%,#7bccde);
+            height: 70px;
+            border-radius: 10px;
+            margin-top: 20px;
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 0 20px; 
+            border: rgba(99, 99, 99, 0.767) 1px solid;
+            box-shadow: 0px 0px 20px 2px #dfe9f3;
+            border: none;
+            
+        }
+        .box1 a{
+            margin-right: 5px;
+            text-decoration: none;
+            color: black; 
+            padding: 10px;
+            
+            transition: 0.25s all ease-in;
+            
+        }
+        .box1 button{
+            border: none;
+            color: rgb(30, 55, 62);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 0.2s all ease;
+            background: transparent;
+            font-size: 13px;
+            padding: 10px;
+            font-weight: 510;
+            
+         
+        }
+        .box1 button:hover{
+            border: 1px solid #538894;
+            color: #497580;
+            border-radius: 10px;
+        }
+        .logout_btn button{
+            border: none;
+            height: 35px;
+            width: 70px;
+            border-radius: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            transition: 0.25s all ease;
+        }
+        .logout_btn button:hover{
+            background-color: rgb(212, 212, 212);
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="boundary">
+       <div class="box1">
+            <a href="home.php">
+                <button class="btn btn-danger">View Product</button>
+            </a>
+            <a href="viewcart.php">
+                <button class="btn btn-danger">View Cart</button>
+            </a>
+            <a href="status_pdt.php">
+                <button class="btn btn-danger">Track Order</button>
+            </a>
+            
+        </div>
+        <div class="logout_btn">
+            <a href="../shared/logout.php">
+                <button class="btn btn-warning">Logout</button>
+            </a>
+        </div>
+      
+    </div>
+</body>
+</html>
