@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(spiderman.jpg);
+            background-size: cover;
+
+        }
+        .login{
+            width: 400px;
+            height: 400px;
+            border: rgba(99, 99, 99, 0.767) 1px solid;    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0px 0px 10px 5px rgba(99, 99, 99, 0.767);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            background: transparent;
+            
+        }
+        h1{
+            margin-left: 90px;
+            margin-top: 20px;
+            font-size: 50px;
+            background: linear-gradient(to left ,rgb(109, 18, 18)35%,rgb(45, 45, 190))35%;
+            background-size: 200% auto;
+            
+            -webkit-background-clip: text;
+            color: transparent;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            animation: gradient 3s linear infinite;
+            width: fit-content;
+            height: fit-content;
+        }
+        @keyframes gradient{
+            0%{
+                background-position: 0% 75%;
+            }
+            50%{
+                background-position: 100% 30%;
+            }
+            100%{
+                background-position: 0% 70%;
+            }  
+        }
+        
+        form input{
+           height: 50px;
+           width: 340px;
+           border-radius: 5px;
+           padding-left: 10px;
+           margin-left: 20px;
+           margin-top: 20px;
+           border: none;
+           background: transparent;
+           border: 1px rgb(160, 160, 160) solid;
+           transition: 0.25s all ease-in-out;
+        }
+        form input::placeholder{
+            font-size: 15px;
+            font-style: impact;
+            color: rgba(207, 207, 207, 0.808); 
+            font-weight: 600;
+        }
+        input[type="text" i] {
+            font-size: 15px;
+            font-style: impact;
+            color: rgba(207, 207, 207, 0.808); 
+            font-weight: 600;
+        }
+        input[type="password" i] {
+            font-size: 15px;
+            font-style: impact;
+            color: rgba(207, 207, 207, 0.808); 
+            font-weight: 600;
+        }
+        form input:hover{
+            transform: scale(1.05);
+            background: linear-gradient(to right, rgb(179, 66, 66) 20%,rgb(47, 53, 150) 100%);
+            outline: none;
+        }
+   
+        form button{
+            border: 1px grey solid;
+            height: 50px;
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-left: 45px;
+            font-size: 15px;
+            font-style: impact;
+            font-weight: bold;
+            background-color: transparent;
+            transition: 0.25s all ease-in-out;
+            color: rgb(214, 208, 208);
+        }
+        form button:hover{
+            box-shadow: 0 0 20px 5px rgb(109, 18, 18);
+            background-color: rgb(109, 18, 18);
+            color: rgb(255, 255, 255);
+            border: 1px rgb(109, 18, 18) solid;
+           
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="login">
+   
+    <form action="login.php" method="post" >
+        <h1>Login Here</h1>
+        <input type="text" placeholder="Username" name="username">
+        <input id="pass1"  type="password" placeholder="Password" name="password">
+       
+
+        <button class="login_btn">Signup</button>
+
+
+    </div>
+    </form>
+</body>
+</html>
